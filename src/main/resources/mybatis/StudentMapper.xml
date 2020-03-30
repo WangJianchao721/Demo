@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.StudentDao" >
+  <resultMap id="PagePojoResultMap" type="com.example.demo.javaBean.Student" >
+   
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="SEX" property="sex" jdbcType="VARCHAR" />
+    <result column="AGE" property="age" jdbcType="INTEGER" />
+    
+  </resultMap> 
+  
+  
+  <select id="getList" resultMap="PagePojoResultMap">
+    select * from STUDENT
+  </select>
+  
+  
+  
+</mapper>
