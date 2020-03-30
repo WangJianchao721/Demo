@@ -30,7 +30,7 @@ public class StartController {
 	@RequestMapping("/go")
 	public String index() {
 		Logger.info("已经进入！");
-		return "我爱你妈！";
+		return "我爱你妈！不礼貌";
 	}
 
 	@GetMapping("/list")
